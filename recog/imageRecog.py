@@ -20,6 +20,11 @@ def giveDescription(image_url ):
     labels = response.label_annotations
     for label in labels:
         print(label.description )
+        if(label.description == " cigarette" ):
+            print("is trash")
+            break
+        else:
+            print ("is not trash")
 
 
 giveDescription('/home/null/Workspace/recog/nekochan.jpg' )
